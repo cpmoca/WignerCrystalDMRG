@@ -1,0 +1,47 @@
+Molecule_name = WignerCrystal;
+Outtext_      = wc.out;
+CL = 8;
+
+n1_tot = 1;
+n2_tot = 1;
+n3_tot = 0;
+n4_tot = 0;
+
+K_tot  = 1;               % NaN to exclude ORBsym
+
+Qnumbers_type     = {U(1), U(1), U(1), U(1)};
+Qnumbers_operator = {n1, n2, n3, n4};
+deas_ops          = {n1, n2, n3, n4};
+
+
+SpinOrbitCoupling = 0
+fact_ = 0.5
+
+
+WignerCrystalCorrection = 1;
+
+%---------------------------------------------------------
+
+CAS_orb = ;           
+
+%---------------------------------------------------------
+
+HF_orb  = ;
+HF_ocu  = ;
+ 
+%---------------------------------------------------------
+E_FCI =  ;
+E_HF  =  ;
+%---------------------------------------------------------
+pt0_operators = {n_u, n_d};
+pt1_operators = {cp_u,c_u;  cp_d,c_d;  c_u,cp_u; c_d,cp_d}
+
+current_operators = {};
+%---------------------------------------------------------
+V_sym = 4;
+Modelfile = model_chemistry_wc 
+
+FCIDUMP = ./Ne_2_Norb_2_rs_10.481_kappa_0.000_p_0.000/FCIDUMP.dat
+
+
+

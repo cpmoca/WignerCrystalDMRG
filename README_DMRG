@@ -1,0 +1,27 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This file provides an example to run DMRG for Wigner Crystal        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%---Download Matlab 2015 object libraries under Academic license 
+%---Download Matlab 2017 object libraries under Academic license 
+
+%---set path using set_qcdmrgruntime2015b.sh
+
+%---to run dmrg type
+
+qcdmrg01 Ne_2_Norb_2_rs_10.4811_kappa_0_p_0/dmrg.input.wc
+
+%---to plot density profile type
+plot_density(2,2,10.481,0,0)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   to run dmrg for different parameter set use the following scripts %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%---to get classical position of the electrons
+classical_positions.m
+
+%---to get FCIDUMP.dat integral file
+integrals_mexican_hat_fft.m
+
+
